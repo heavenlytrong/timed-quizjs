@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-end">
+        <div id = "end">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter your name for leaderboards! :)</h2>
+                <input type="text" name="name" id="username" placeholder="insert name here!!">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>submit</button>
+            </form>
+            <a href="./game.html" id="try-again">Try Again</a>
+            <a href="/timed-quizjs/index.html" id="main-menu">Main Menu</a>
+        </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+</html>
