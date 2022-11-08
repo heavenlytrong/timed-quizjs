@@ -76,7 +76,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score)
 
-        return window.location.assign('./end.html')
+        return window.location.assign('https://heavenlytrong.github.io/timed-quizjs/end.html')
     }
 
     questionCounter++
