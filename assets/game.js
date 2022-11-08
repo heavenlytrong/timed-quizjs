@@ -25,38 +25,38 @@ let questions = [
         
     },
     {
-        question: 'what is emilys favorite food??', 
-        choice1: 'cheese',
-        choice2: 'chee',
-        choice3: 'cese',
-        choice4: 'chese',
+        question: 'Whats a popular CSS framework', 
+        choice1: 'Bootstrap',
+        choice2: 'jQuerry',
+        choice3: 'youtube',
+        choice4: 'the art museum',
         answer: 1,
         
     },
     {
-        question: 'what is emilys favorite food???', 
-        choice1: 'cheese',
-        choice2: 'chee',
-        choice3: 'cese',
-        choice4: 'chese',
-        answer: 3,
+        question: 'What selector is used for background color in CSS', 
+        choice1: 'Color',
+        choice2: 'Background-color',
+        choice3: 'Background',
+        choice4: 'Background-coulour',
+        answer: 2,
         
     },
     {
-        question: 'what is emilys favorite food????', 
-        choice1: 'cheese',
-        choice2: 'chee',
-        choice3: 'cese',
-        choice4: 'chese',
+        question: 'What is the hardest language to learn', 
+        choice1: 'HTML',
+        choice2: 'CSS',
+        choice3: 'Spanish',
+        choice4: 'all of them',
         answer: 4,
         
     },
     {
-        question: 'what is emilys favorite food????', 
-        choice1: 'cheese',
-        choice2: 'chee',
-        choice3: 'cese',
-        choice4: 'chese',
+        question: 'Is my quiz great or what', 
+        choice1: 'Meh',
+        choice2: 'YEAH!!',
+        choice3: 'no',
+        choice4: 'good enough to pass',
         answer: 4,
         
     }
@@ -76,7 +76,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore',score)
 
-        return window.location.assign('./assets/end.html')
+        return window.location.assign('./end.html')
     }
 
     questionCounter++

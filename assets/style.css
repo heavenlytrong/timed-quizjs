@@ -1,3 +1,4 @@
+
 /* game */
 body {
     color: black;
@@ -117,6 +118,20 @@ input::placeholder{
 }
 
 #try-again:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+#main-menu {
+    color: wheat;
+    border: solid black;
+    background-color: purple;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#main-menu:hover {
     cursor: pointer;
     background-color: green;
 }
