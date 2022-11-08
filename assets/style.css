@@ -1,0 +1,139 @@
+/* game */
+body {
+    color: black;
+    margin-top: 300px;
+}
+
+.choice-container{
+    display: flex;
+    margin: 1rem;
+    width: 35%rem;
+    border-radius: 15px;
+    background: rgb(37, 2, 77);
+    padding: auto;
+    display: center;
+    height: 90px;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 100px;
+}
+
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.choice-text{
+    padding: 2rem;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+.correct {
+    background: green
+}
+.incorrect{ 
+    background: red;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+
+/*retry buttons*/
+#end{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    margin-left: 38%;
+    display: block;
+    height: 100%;
+
+    
+}
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: solid black;
+
+    
+    
+}
+
+input::placeholder{
+    color: black;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+#end-text{
+    font-size: bold;
+    background-color: purple;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    padding-top: 15px;
+    border-radius: 30px;
+    color: white;
+}
+#try-again {
+    color: wheat;
+    border: solid black;
+    background-color: purple;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#try-again:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+
+/* highscores */
+
+#HS {
+    color: black;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
