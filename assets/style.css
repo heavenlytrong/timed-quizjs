@@ -152,3 +152,17 @@ input::placeholder{
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
+
+#count {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    border: solid black;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    max-width: 500px;
+    align-items: center;
+    margin-left: 300px;
+    background-color: aliceblue;
+}

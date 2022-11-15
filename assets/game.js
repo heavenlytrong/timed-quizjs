@@ -61,6 +61,17 @@ let questions = [
         
     }
 ]
+var count = 25;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done'
+    alert("You're out of time!");
+    return window.location.assign('./end.html')
+  }
+}, 1000);
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
@@ -108,6 +119,9 @@ choices.forEach(choice => {
 
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+        } 
+        else {
+            count-=5;
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
@@ -115,7 +129,7 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
-        }, 1000)
+        }, 1000) 
     })
 })
 
